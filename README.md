@@ -3,7 +3,8 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
+  - [📖 Sample Of Website](#Sample-Of-Website)
+    - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
@@ -19,6 +20,8 @@
 # 📖 My Portafolio <a name="about-project"></a>
 
 > Light-And-DarkMode is a website built with Webpack and uses GitHub linters to check the code. It is primarily created with CSS and HTML and includes functions for toggling between dark mode and light mode. It also features Font Awesome icons. Please take a look at the live demo
+
+# Sample Of Website <a name="Sample-Of-Website"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
