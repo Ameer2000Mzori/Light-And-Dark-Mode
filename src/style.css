@@ -21,13 +21,16 @@
   --background: #121212;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--background);
   background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%2392aca9' fill-opacity='0.45' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-position: center;
   padding: 0;
   margin: 0;
-  font-family: Comfortaa, sans-serif;
 }
 
 /* navbar styling : */
@@ -124,6 +127,7 @@ body {
 /* switcher-wrapper */
 
 .switcher-wrapper {
+  font-family: Comfortaa, sans-serif;
   display: flex;
   justify-content: space-between;
   width: 200px;
@@ -340,5 +344,58 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+  }
+}
+
+/* HEADER */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  padding: 15% 15%;
+  height: 600px;
+}
+
+#header .wrapper {
+  display: flex;
+  padding: 15% 15%;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+
+h1 {
+  font-family: Kaushan Script, sans-serif;
+  font-size: 50px;
+  margin-bottom: 0;
+  color: var(--on-background-alt);
+}
+
+h5 {
+  font-size: 32px;
+  font-weight: normal;
+  font-family: Comfortaa, sans-serif;
+  color: var(--on-background-alt);
+}
+
+@media screen and (max-width: 768px) {
+  #header .wrapper {
+    padding: 10% 10%;
+  }
+
+  h1 {
+    font-family: Kaushan Script, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: var(--on-background-alt);
+  }
+
+  h5 {
+    font-size: 22px;
+    font-weight: normal;
+    font-family: Comfortaa, sans-serif;
+    color: var(--on-background-alt);
   }
 }

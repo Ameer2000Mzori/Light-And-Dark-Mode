@@ -6,7 +6,7 @@ import darkLogo from "./asset/darkModelogo.svg";
 
 const btnWrap = document.getElementsByClassName("btn-wrap")[0];
 const navbrandimg = document.getElementsByClassName("nav-brand-img")[0];
-// navbrandimg.src = darkLogo;
+navbrandimg.src = darkLogo;
 navbrandimg.src = lightLogo;
 // light and dark mode
 const toggleSwitch = document.getElementById("box-check");
