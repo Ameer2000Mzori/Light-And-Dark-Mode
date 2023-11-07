@@ -10,22 +10,26 @@ import lightStatus from "./asset/lightModestatus.svg";
 import darkWeb from "./asset/darkModeweb.svg";
 import lightWeb from "./asset/lightModeweb.svg";
 
-const btnWrap = document.getElementsByClassName("btn-wrap")[0];
 const navbrandimg = document.getElementsByClassName("nav-brand-img")[0];
 
 // light and dark mode
 const toggleSwitch = document.getElementById("box-check");
 const switcherWrapper = document.getElementsByClassName("switcher-wrapper")[0];
-const btnImg = document.getElementsByClassName("btn-img")[0];
+const btnImg = document.getElementsByClassName("nav-btn-img")[0];
+const btnWrap = document.getElementsByClassName("nav-btn-wrap")[0];
 
 btnImg.src = menubar;
 
 const img1 = document.getElementsByClassName("img-1")[0];
 const img2 = document.getElementsByClassName("img-2")[0];
 const img3 = document.getElementsByClassName("img-3")[0];
+
 img1.src = lightBoard;
 img2.src = lightStatus;
 img3.src = lightWeb;
+
+const pText = document.getElementsByClassName("p-text")[0];
+
 function imgesChange(color) {
   if (color === "light") {
     img1.src = lightBoard;
@@ -45,6 +49,7 @@ function lightMode() {
   switcherWrapper.children[0].textContent = "Light Mode";
   switcherWrapper.children[1].style.color = "black";
   switcherWrapper.children[0].style.color = "black";
+  pText.style.color = "black";
   switcherWrapper.children[1].classList.replace("fa-moon", "fa-sun");
   imgesChange("light");
 }
@@ -55,6 +60,7 @@ function darkMode() {
   switcherWrapper.children[1].classList.replace("fa-sun", "fa-moon");
   switcherWrapper.children[1].style.color = "#ffffff";
   switcherWrapper.children[0].style.color = "#ffffff";
+  pText.style.color = "#ffffff";
   imgesChange("dark");
 }
 
