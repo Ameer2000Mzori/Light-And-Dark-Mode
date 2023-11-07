@@ -429,16 +429,6 @@ h5 {
   box-shadow: var(--box-shadow);
 }
 
-.warp-img {
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-right: 25px;
-  width: auto;
-  background: var(--background);
-  box-shadow: var(--box-shadow);
-}
-
 #imges {
   height: 300px;
   width: 300px;
@@ -467,6 +457,7 @@ h5 {
   height: 500px;
   margin-top: 10rem;
 }
+
 .project-wraper {
   display: flex;
   flex-direction: column;
@@ -554,5 +545,49 @@ p {
     color: var(--on-primary);
     border-radius: 10px;
     padding: 10px;
+  }
+}
+
+/* Contact Section */
+
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.fab {
+  font-size: 100px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.fab:hover {
+  color: var(--on-background);
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    margin-top: 25rem;
+    height: 600px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .fab {
+    margin-right: 0;
   }
 }

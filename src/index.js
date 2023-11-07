@@ -45,7 +45,6 @@ function imgesChange(color) {
 }
 
 function lightMode() {
-  document.documentElement.setAttribute("data-theme", "light");
   switcherWrapper.children[0].textContent = "Light Mode";
   switcherWrapper.children[1].style.color = "black";
   switcherWrapper.children[0].style.color = "black";
@@ -55,7 +54,6 @@ function lightMode() {
 }
 
 function darkMode() {
-  document.documentElement.setAttribute("data-theme", "dark");
   switcherWrapper.children[0].textContent = "Dark Mode";
   switcherWrapper.children[1].classList.replace("fa-sun", "fa-moon");
   switcherWrapper.children[1].style.color = "#ffffff";
@@ -67,8 +65,13 @@ function darkMode() {
 toggleSwitch.addEventListener("change", (event) => {
   console.log(event.target.checked);
   if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
+
     darkMode();
   } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
     lightMode();
   }
 });
