@@ -58,7 +58,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://ameer2000mzori.github.io/Light-And-DarkMod/dist/)
+- [Live Demo Link](https://ameer2000mzori.github.io/Light-And-Dark-Mode/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
