@@ -23,6 +23,9 @@
 
 # Sample Of Website <a name="Sample-Of-Website"></a>
 
+![alt text](./sample/lightimg.png)
+![alt text](./sample/Screenshot%202023-11-07%20035116.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
