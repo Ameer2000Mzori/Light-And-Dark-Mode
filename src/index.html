@@ -16,7 +16,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>This is the start</h1>
-    <script src="./script.js"></script>
+    <!-- <p> here is the nav bat </p> -->
+    <nav class="navbar">
+      <div class="navbrand-wrap">
+        <img class="nav-brand-img" src="./asset/lightMode-logo.svg" alt="" />
+      </div>
+      <button class="btn-wrap">
+        <img class="btn-img" src="" alt="" />
+      </button>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <!-- Dark Mode Switch -->
+      <div class="switcher-wrapper">
+        <p>Light Mode</p>
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+          <input id="box-check" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </nav>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

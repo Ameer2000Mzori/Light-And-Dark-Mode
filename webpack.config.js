@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    bundle: path.resolve(__dirname, "src", "script.js"),
+    bundle: path.resolve(__dirname, "src", "index.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -28,7 +28,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: "asset/resource",
         generator: {
           filename: "assets/[name][ext]", // Output path for images
